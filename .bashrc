@@ -19,6 +19,9 @@ fi
 
 export HISTCONTROL=ignoredups:ignorespace
 
-for i in "$HOME/.bash_completion.d/*"; do
-	source $i
-done
+# I like terminal prompt in gentoo
+if [[ ${EUID} == 0 ]] ; then
+	PS1='\[\033[01;31m\]\u@\h \[\033[01;34m\]\W \$ \[\033[00m\]'
+else
+	PS1='\[\033[01;32m\]\u@\h \[\033[01;34m\]\W \$ \[\033[00m\]'
+fi
