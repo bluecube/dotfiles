@@ -19,9 +19,18 @@ fi
 
 export HISTCONTROL=ignoredups:ignorespace
 
-# I like terminal prompt in gentoo
+# I like terminal prompt in gentoo, mostly.
+
 if [[ ${EUID} == 0 ]] ; then
-	PS1='\[\e]2;\u@\h \w\a\033[01;31m\]\u@\h \[\033[01;34m\]\w \$ \[\033[00m\]'
+	COLOR='\[\e[01;31m\]' # Green
 else
-	PS1='\[\e]2;\u@\h \w\a\033[01;32m\]\u@\h \[\033[01;34m\]\w \$ \[\033[00m\]'
+	COLOR='\[\e[01;32m\]' # Red
 fi
+
+if [[ $REMOTE_LOGIN = yes ]] ; then 
+	# The variable REMOTE_LOGIN is set in .ssh/environment, and
+	# it needs to be enabled in sshd_config (PermitUserEnvironment)
+	HOST_STYLE='\[\e[7m\]' # Inverse
+fi
+
+PS1='\[\e]2;\u@\h \w\a\]'$COLOR'\u@'$HOST_STYLE'\h\[\e[00m\e[01;34m\] \w \$ \[\e[00m\]'
