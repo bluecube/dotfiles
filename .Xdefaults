@@ -1,6 +1,6 @@
 !URxvt*background: #000000
 URxvt*depth: 32
-URxvt*background: rgba:0000/0000/0000/cccc
+URxvt*background: rgba:0000/0000/0000/eeee
 URxvt.foreground: #ffffff
 URxvt.font: xft:DejaVu Sans Mono:size=7
 URxvt.scrollBar: false
