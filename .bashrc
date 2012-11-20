@@ -14,8 +14,11 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
+if [[ $(uname) -eq 'z400' ]] ;
+	# I don't have admin rights on z400 and always connect remotely ...
+	REMOTE_LOGIN=yes
+fi
 
-# Put your fun stuff here.
 
 export HISTCONTROL=ignoredups:ignorespace
 
