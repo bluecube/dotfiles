@@ -255,3 +255,6 @@ else
     hi Include         guifg=#dfaf8f gui=bold
 endif
     " TODO check every syntax group that they're ok
+
+" Added by cube:
+hi ColorColumn guibg=#4f4f4f
