@@ -24,10 +24,11 @@ autocmd FileType xml set omnifunc=xmlcomplete#CompleteTags
 autocmd FileType php set omnifunc=phpcomplete#CompletePHP
 autocmd FileType c set omnifunc=ccomplete#Complete
 
-" And python indenting
-autocmd FileType python set expandtab
-autocmd FileType python set shiftwidth=4
-autocmd FileType python set tabstop=4
+set expandtab
+set shiftwidth=4
+set tabstop=4
+
+autocmd FileType makefile set noexpandtab
 
 " Show tabs and extra spaces.
 " autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
