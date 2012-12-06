@@ -7,4 +7,7 @@ set go-=R
 set mousemodel=popup_setpos
 set gfn=DejaVu\ Sans\ Mono\ 8
 
-colorscheme zenburn
+" Highlighting 80 character limit.
+" The highlight color works well only for zenburn colorscheme
+set cc=+1
+hi ColorColumn guibg=#4f4f4f
