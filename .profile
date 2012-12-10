@@ -18,3 +18,6 @@ export INTEL_BATCH=1
 
 export BROWSER="firefox"
 export EDITOR="vim"
+
+# For ripping DVDs
+export VIDEO_FORMAT=PAL
