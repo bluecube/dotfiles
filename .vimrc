@@ -49,3 +49,5 @@ set scrolloff=2
 " Currently text widht is only used for highlighting 81st column in gvimrc, but
 " logically should apply also to console vim.
 set textwidth=80
+
+set secure
