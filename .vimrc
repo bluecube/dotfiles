@@ -38,7 +38,7 @@ autocmd FileType makefile set noexpandtab
 " autocmd BufWinEnter * call matchadd('ExtraWhitespace', '\s\+$', -1)
 " autocmd BufWinLeave * call clearmatches()
 
-set list listchars=tab:→\ ,precedes:⇐,extends:⇒
+set list listchars=tab:→\ ,precedes:⇐,extends:⇒,trail:▫
 
 " Tag list
 nnoremap <silent> <F9> :TlistToggle<CR>
