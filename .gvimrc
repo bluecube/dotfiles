@@ -8,4 +8,4 @@ set mousemodel=popup_setpos
 set gfn=DejaVu\ Sans\ Mono\ 8
 
 " Highlighting 80 character limit.
-set cc=+1
+set cc=81

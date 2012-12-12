@@ -46,8 +46,4 @@ nnoremap <silent> <F9> :TlistToggle<CR>
 " Keep at least two lines around cursor on screen
 set scrolloff=2
 
-" Currently text widht is only used for highlighting 81st column in gvimrc, but
-" logically should apply also to console vim.
-set textwidth=80
-
 set secure
