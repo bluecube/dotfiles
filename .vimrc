@@ -47,3 +47,5 @@ nnoremap <silent> <F9> :TlistToggle<CR>
 set scrolloff=2
 
 set secure
+
+set cursorline
