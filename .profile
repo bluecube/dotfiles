@@ -21,3 +21,5 @@ export EDITOR="vim"
 
 # For ripping DVDs
 export VIDEO_FORMAT=PAL
+
+GTK2_RC_FILES="$HOME/.gtkrc-2.0"
