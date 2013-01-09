@@ -30,7 +30,7 @@ set expandtab
 set shiftwidth=4
 set tabstop=4
 
-autocmd FileType makefile set noexpandtab
+autocmd FileType make set noexpandtab
 
 " Show tabs and extra spaces.
 " autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
@@ -49,3 +49,6 @@ set scrolloff=2
 set secure
 
 set cursorline
+
+" Write file using sudo with :w!!
+cnoremap W w !sudo tee >/dev/null %
