@@ -49,6 +49,3 @@ set scrolloff=2
 set secure
 
 set cursorline
-
-" Write file using sudo with :w!!
-cnoremap W w !sudo tee >/dev/null %
