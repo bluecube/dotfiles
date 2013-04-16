@@ -49,3 +49,5 @@ set scrolloff=2
 set secure
 
 set cursorline
+
+set showcmd
