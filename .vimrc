@@ -39,6 +39,7 @@ autocmd FileType make set noexpandtab
 " autocmd BufWinLeave * call clearmatches()
 
 set list listchars=tab:→\ ,precedes:⇐,extends:⇒,trail:▫
+set modeline
 
 " Tag list
 nnoremap <silent> <F9> :TlistToggle<CR>
