@@ -16,7 +16,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 awful.util.spawn_with_shell("urxvtd -o -f")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvtc"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
