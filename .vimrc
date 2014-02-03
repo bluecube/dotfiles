@@ -5,7 +5,7 @@ cmap %/ <C-R>=expand("%:p:h") . '/'<CR>
 set nowrap
 set number
 set wildmode=list:longest
-set grepprg=internal
+set grepprg=ag
 
 set incsearch
 
