@@ -197,7 +197,7 @@ globalkeys = awful.util.table.join(
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.util.spawn(terminal) end),
     awful.key({ modkey, "Shift"   }, "Return", function () awful.util.spawn(terminal .. " -e mc") end),
-    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(terminal .. " -e python3") end),
+    awful.key({ modkey, "Control" }, "Return", function () awful.util.spawn(terminal .. " -e ipython-3.3") end),
     awful.key({ modkey, "Control" }, "r", awesome.restart),
     awful.key({ modkey, "Shift"   }, "q", awesome.quit),
 
