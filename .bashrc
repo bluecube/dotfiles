@@ -38,4 +38,4 @@ fi
 
 PS1='\[\e]2;\u@\h \w\a\]'$COLOR'\u@'$HOST_STYLE'\h\[\e[00m\e[01;34m\] \w \$ \[\e[00m\]'
 
-alias ls=ls -color=auto
+alias ls='ls --color=auto'
