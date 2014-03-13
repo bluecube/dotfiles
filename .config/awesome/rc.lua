@@ -8,6 +8,7 @@ beautiful = require("beautiful")
 -- Notification library
 naughty = require("naughty")
 
+local battery = require("battery")
 
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
@@ -71,6 +72,16 @@ mymainmenu = awful.menu({ items = { { "awesome", myawesomemenu, beautiful.awesom
 -- {{{ Wibox
 -- Create a textclock widget
 mytextclock = awful.widget.textclock()
+
+-- Battery widget
+batterywidget = wibox.widget.textbox()
+batterywidget:set_text(batteryInfo("BAT0"))
+batterywidget_timer = timer({timeout = 3})
+batterywidget_timer:connect_signal("timeout", function()
+        batterywidget:set_text(batteryInfo("BAT0"))
+    end)
+batterywidget_timer:start()
+
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -140,6 +151,7 @@ for s = 1, screen.count() do
     if s == 1 then
         right_layout:add(wibox.widget.systray())
     end
+    right_layout:add(batterywidget)
     right_layout:add(mytextclock)
     right_layout:add(mylayoutbox[s])
 
