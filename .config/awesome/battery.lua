@@ -17,10 +17,7 @@ function batteryInfo(adapter)
   fsta:close()
   local battery = math.floor(cur * 100 / cap)
 
-  if sta:match("Charging") then
-    icon = "⚡"
-    percent = "%"
-  elseif sta:match("Discharging") then
+  if sta:match("Discharging") then
     icon = ""
     percent = "%"
     if tonumber(battery) < 15 then
@@ -32,10 +29,7 @@ function batteryInfo(adapter)
              , bg = beautiful.bg_focus
       })
     end
-  else
-    battery = "A/C"
-    icon = ""
-    percent = ""
+    return " ⚡" .. battery .. "% "
   end
-  return " "..icon..battery..percent.." "
+  return ""
 end

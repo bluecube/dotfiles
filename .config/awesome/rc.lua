@@ -76,7 +76,7 @@ mytextclock = awful.widget.textclock()
 -- Battery widget
 batterywidget = wibox.widget.textbox()
 batterywidget:set_text(batteryInfo("BAT0"))
-batterywidget_timer = timer({timeout = 3})
+batterywidget_timer = timer({timeout = 5})
 batterywidget_timer:connect_signal("timeout", function()
         batterywidget:set_text(batteryInfo("BAT0"))
     end)
