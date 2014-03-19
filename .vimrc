@@ -38,3 +38,15 @@ set showcmd
 
 set foldmethod=indent
 set foldlevelstart=99
+
+" Vundle stuff
+filetype off " filetype must be off for vundle to work. It is enabled later
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+" vundle must be first here
+Bundle 'gmarik/vundle'
+Bundle 'wincent/Command-T'
+Bundle 'vim-scripts/a.vim'
+Bundle 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
+filetype on
+
