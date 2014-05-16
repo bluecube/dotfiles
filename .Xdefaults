@@ -8,3 +8,6 @@ URxvt.secondaryScroll:  true
 URxvt.visualBell: true
 URxvt.urgentOnBell: true
 !Rxvt*termName: rxvt-unicode256
+
+
+xterm*faceName: xft:DejaVu Sans Mono:size=8
