@@ -8,6 +8,9 @@ beautiful = require("beautiful")
 -- Notification library
 naughty = require("naughty")
 
+-- For wallpapers
+local gears = require("gears")
+
 local battery = require("battery")
 
 -- {{{ Variable definitions
@@ -161,6 +164,8 @@ for s = 1, screen.count() do
     layout:set_right(right_layout)
 
     mywibox[s]:set_widget(layout)
+
+    gears.wallpaper.maximized("/home/cube/images/current/summer-clouds-wallpaper-1.jpg", s)
 end
 -- }}}
 
