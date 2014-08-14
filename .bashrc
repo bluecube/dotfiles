@@ -14,12 +14,6 @@ if [[ $- != *i* ]] ; then
 	return
 fi
 
-if [[ $(uname -n) = 'z400' ]] ; then
-	# I don't have admin rights on z400 and always connect remotely ...
-	REMOTE_LOGIN=yes
-fi
-
-
 export HISTCONTROL=ignoredups:ignorespace
 
 # I like terminal prompt in gentoo, mostly.
