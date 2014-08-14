@@ -18,18 +18,28 @@ export HISTCONTROL=ignoredups:ignorespace
 
 # I like terminal prompt in gentoo, mostly.
 
+function __git_ps1
+{
+    local b="$(git symbolic-ref HEAD 2>/dev/null)";
+    if [ -z "$b" ]; then return ; fi
+
+    printf " (%s)" "${b##refs/heads/}";
+}
+
 if [[ ${EUID} == 0 ]] ; then
-	COLOR='\[\e[01;31m\]' # Green
+	USER_COLOR='\[\e[01;31m\]' # Green
 else
-	COLOR='\[\e[01;32m\]' # Red
+	USER_COLOR='\[\e[01;32m\]' # Red
 fi
 
-if [[ $REMOTE_LOGIN = yes ]] ; then 
+if [[ $REMOTE_LOGIN = yes ]] ; then
 	# The variable REMOTE_LOGIN is set in .ssh/environment, and
 	# it needs to be enabled in sshd_config (PermitUserEnvironment)
 	HOST_STYLE='\[\e[7m\]' # Inverse
 fi
 
-PS1='\[\e]2;\u@\h \w\a\]'$COLOR'\u@'$HOST_STYLE'\h\[\e[00m\e[01;34m\] \w \$ \[\e[00m\]'
+MAIN_COLOR='\e[01;34m\]'
+
+PS1='\[\e]2;\u@\h \w$(__git_ps1)\a\]'$USER_COLOR'\u@'$HOST_STYLE'\h\[\e[00m'$MAIN_COLOR' \w$(__git_ps1) \$ \[\e[00m\]'
 
 alias ls='ls --color=auto'
