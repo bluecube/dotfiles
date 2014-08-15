@@ -1,0 +1,11 @@
+[user]
+	name = Kuba Marek
+	email = blue.cube@seznam.cz
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+[diff]
+	tool = gvimdiff
+	algorithm = patience
+[push]
+	default = simple
