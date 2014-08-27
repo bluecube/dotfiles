@@ -5,7 +5,7 @@ source_dir=$(pwd)
 
 find -type f | while read f
 do
-    if [[ $f = ./.install.sh ]] ; then continue ; fi
+    if [[ $f = ./install.sh ]] ; then continue ; fi
     if [[ $f = ./.git/* ]] ; then continue ; fi
 
     source_file=$source_dir/$f
