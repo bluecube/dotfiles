@@ -5,6 +5,7 @@ export CPATH=~/local/include:$CPATH
 export LIBRARY_PATH=~/local/lib:$LIBRARY_PATH 
 export LD_LIBRARY_PATH=~/local/lib:$LD_LIBRARY_PATH 
 export PKG_CONFIG_PATH=~/local/lib/pkgconfig:$PKG_CONFIG_PATH 
+export PYTHONPATH=~/local/lib/python3.3/site-packages:$PYTHONPATH
 
 # Use pythonrc file
 export PYTHONSTARTUP=$HOME/.pythonrc
