@@ -44,6 +44,8 @@ set showcmd
 set foldmethod=indent
 set foldlevelstart=99
 
+set formatoptions+=j " Remove comment leader when joining lines
+
 " Configuration for gitgutter
 let g:gitgutter_realtime = 0
 let g:gitgutter_map_keys = 0
