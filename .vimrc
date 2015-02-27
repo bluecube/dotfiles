@@ -54,7 +54,6 @@ let g:gitgutter_map_keys = 0
 highlight clear SignColumn
 
 " Vundle stuff
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
 call vundle#begin()
@@ -66,4 +65,3 @@ Bundle 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
 Bundle 'airblade/vim-gitgutter'
 Bundle 'tpope/vim-fugitive'
 call vundle#end()
-filetype plugin indent on
