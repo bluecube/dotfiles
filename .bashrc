@@ -32,9 +32,7 @@ else
 	USER_COLOR='\[\e[01;32m\]' # Red
 fi
 
-if [[ $REMOTE_LOGIN = yes ]] ; then
-	# The variable REMOTE_LOGIN is set in .ssh/environment, and
-	# it needs to be enabled in sshd_config (PermitUserEnvironment)
+if [[ -n "$SSH_CONNECTION" ]] ; then
 	HOST_STYLE='\[\e[7m\]' # Inverse
 fi
 
