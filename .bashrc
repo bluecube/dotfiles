@@ -50,13 +50,13 @@ function __git_ps1
 }
 
 if [[ ${EUID} == 0 ]] ; then
-	USER_COLOR='\[\e[01;31m\]' # Green
+    USER_COLOR='\[\e[01;31m\]' # Green
 else
-	USER_COLOR='\[\e[01;32m\]' # Red
+    USER_COLOR='\[\e[01;32m\]' # Red
 fi
 
 if [[ -n "$SSH_CONNECTION" ]] ; then
-	HOST_STYLE='\[\e[7m\]' # Inverse
+    HOST_STYLE='\[\e[7m\]' # Inverse
 fi
 
 MAIN_COLOR='\e[01;34m\]'
