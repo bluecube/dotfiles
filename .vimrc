@@ -56,6 +56,7 @@ highlight clear SignColumn
 " Vundle stuff
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
+" filetype off
 call vundle#begin()
 " vundle must be first here
 Bundle 'gmarik/Vundle.vim'
