@@ -165,7 +165,7 @@ for s = 1, screen.count() do
 
     mywibox[s]:set_widget(layout)
 
-    gears.wallpaper.maximized("/home/cube/images/current/summer-clouds-wallpaper-1.jpg", s)
+    gears.wallpaper.maximized("/home/cube/.config/awesome/wallpaper.jpg", s)
 end
 -- }}}
 
