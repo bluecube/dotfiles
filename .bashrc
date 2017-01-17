@@ -17,7 +17,9 @@ fi
 # If this is top level shell, over ssh and not in tmux, start a new tmux session
 # In this case the rest of the bashrc is unimportant, because tmux will run new bash with new bashrc inside.
 if [ "$SHLVL" = 1 -a -n "$SSH_CONNECTION" -a -z "$TMUX" ] ; then
-    exec tmux new-session -s "$USER" -A
+    if hash tmux 2>/dev/null ; then
+        exec tmux new-session -s "$USER" -A
+    fi
 fi
 
 export HISTCONTROL=ignoredups:ignorespace
