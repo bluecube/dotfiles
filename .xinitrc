@@ -11,4 +11,5 @@ xrdb -merge ~/.Xdefaults
 #exec startxfce4
 
 setxkbmap -layout us,cz -option grp:caps_switch
-exec awesome
+#exec awesome
+exec i3
