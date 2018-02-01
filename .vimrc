@@ -59,10 +59,10 @@ let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
 " filetype off
 call vundle#begin()
 " vundle must be first here
-Bundle 'gmarik/Vundle.vim'
-Bundle 'wincent/Command-T'
-Bundle 'nacitar/a.vim'
-Bundle 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
-Bundle 'airblade/vim-gitgutter'
-Bundle 'tpope/vim-fugitive'
+Plugin 'gmarik/Vundle.vim'
+Plugin 'wincent/Command-T'
+Plugin 'nacitar/a.vim'
+Plugin 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-fugitive'
 call vundle#end()
