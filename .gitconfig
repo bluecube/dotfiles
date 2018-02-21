@@ -9,3 +9,5 @@
 	algorithm = patience
 [push]
 	default = upstream
+[gui]
+	gcwarning = false
