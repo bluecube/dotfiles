@@ -11,3 +11,4 @@
 	default = upstream
 [gui]
 	gcwarning = false
+	diffopts = --histogram
