@@ -53,6 +53,10 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_map_keys = 0
 highlight clear SignColumn
 
+" Configuration for CommandT
+let g:CommandTMaxFiles=1000000
+let g:CommandTFileScanner="git"
+
 " Vundle stuff
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
