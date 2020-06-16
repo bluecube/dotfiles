@@ -1,6 +1,6 @@
 !URxvt*background: #000000
 URxvt*depth: 32
-URxvt.font: xft:DejaVu Sans Mono:size=8
+URxvt.font: xft:DejaVu Sans Mono:size=9, xft:Noto Emoji
 URxvt.scrollBar: false
 URxvt.secondaryScroll:  true
 URxvt.visualBell: true
@@ -35,4 +35,4 @@ URxvt*color14 : #34E2E2
 URxvt*color7  : #D3D7CF
 URxvt*color15 : #EEEEEC
 
-xterm*faceName: xft:DejaVu Sans Mono:size=8
+xterm*faceName: xft:DejaVu Sans Mono:size=9
