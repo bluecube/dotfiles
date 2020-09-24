@@ -43,7 +43,6 @@ bindsym $mod+f fullscreen toggle
 
 bindsym $mod+apostrophe split h
 bindsym $mod+Shift+apostrophe split v
-bindsym $mod+space layout toggle split
 bindsym $mod+e layout toggle all
 
 bindsym $mod+Shift+space floating toggle
@@ -72,6 +71,7 @@ bindsym $mod+Left focus left
 bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
+bindsym $mod+space focus mode_toggle
 
 # move focused window
 bindsym $mod+Shift+h move left
