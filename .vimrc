@@ -7,7 +7,9 @@ cmap %/ <C-R>=expand("%:p:h") . '/'<CR>
 set nowrap
 set number
 set wildmode=list:longest
-set grepprg=rg
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --hidden
+endif
 
 set incsearch
 
