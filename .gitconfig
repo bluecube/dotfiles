@@ -12,3 +12,5 @@
 [gui]
 	gcwarning = false
 	diffopts = --histogram
+[pull]
+	ff = only
