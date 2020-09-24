@@ -23,6 +23,7 @@ inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 set expandtab
 set shiftwidth=4
 set tabstop=4
+set softtabstop=4
 
 autocmd FileType make set noexpandtab
 
