@@ -19,15 +19,18 @@ bindsym $mod+Ctrl+Return exec urxvt -e ipython3
 # start midnight commander
 bindsym $mod+Shift+Return exec urxvt -e mc
 # Media control
-bindsym XF86AudioMute exec amixer -- sset Master toggle
-bindsym XF86AudioLowerVolume exec amixer -- sset Master 5%-
-bindsym XF86AudioRaiseVolume exec amixer -- sset Master 5%+
-bindsym XF86AudioPlay exec mpc toggle
-bindsym Shift+XF86AudioPlay exec ~/scripts/randomplaylist.sh
-bindsym XF86AudioPrev exec mpc prev
-bindsym Shift+XF86AudioPrev exec mpc seek -5
-bindsym XF86AudioNext exec mpc next
-bindsym Shift+XF86AudioNext exec mpc seek +5
+bindsym $mod+F10 exec amixer -- sset Master toggle
+bindsym $mod+F11 exec amixer -- sset Master 5%-
+bindsym $mod+F12 exec amixer -- sset Master 5%+
+bindsym $mod+F5 exec mpc toggle
+bindsym $mod+Shift+F5 exec "mpc clear ; mpc ls | mpc add ; mpc shuffle | mpc play"
+bindsym $mod+F7 exec mpc prev
+bindsym $mod+Shift+F7 exec mpc seek -5
+bindsym $mod+F8 exec mpc next
+bindsym $mod+Shift+F8 exec mpc seek +5
+# Power management
+bindsym $mod+F1 exec sudo pm-suspend
+bindsym $mod+Shift+F1 exec urxvt -e sudo /usr/local/bin/backup_to_lizard.sh --sleep-after
 
 # Misc
 bindsym $mod+Shift+c kill
