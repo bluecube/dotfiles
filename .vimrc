@@ -61,7 +61,6 @@ let g:CommandTMaxFiles=1000000
 let g:CommandTFileScanner="git"
 
 " Vundle stuff
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
 
@@ -74,5 +73,3 @@ Plugin 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
-
-filetype plugin indent on
