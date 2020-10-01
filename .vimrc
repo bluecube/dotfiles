@@ -63,6 +63,10 @@ let g:CommandTFileScanner="git"
 " Configuration for localvimrc
 g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
 
+" Language server config
+let g:lsc_server_commands = {'python': 'pyls', 'c': 'ccls', 'cpp': 'ccls'} " These must be installed externally!
+let g:lsc_auto_map = v:true " use default key mappings
+
 " Vundle stuff
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
@@ -75,4 +79,5 @@ Plugin 'nacitar/a.vim'
 Plugin 'embear/vim-localvimrc'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
+Plugin 'natebosch/vim-lsc'
 call vundle#end()
