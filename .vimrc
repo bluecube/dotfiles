@@ -14,7 +14,7 @@ endif
 set incsearch
 
 " Completion options
-set completeopt=longest,menuone,preview
+set completeopt=menuone,preview,noinsert
 set complete-=i
 
 " Enter in complete menu
