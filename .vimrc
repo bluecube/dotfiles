@@ -60,6 +60,9 @@ highlight clear SignColumn
 let g:CommandTMaxFiles=1000000
 let g:CommandTFileScanner="git"
 
+" Configuration for localvimrc
+g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
+
 " Vundle stuff
 set rtp+=~/.vim/bundle/Vundle.vim
 let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
@@ -69,7 +72,7 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'wincent/Command-T'
 Plugin 'nacitar/a.vim'
-Plugin 'vim-scripts/perdirvimrc--Autoload-vimrc-files-per-di'
+Plugin 'embear/vim-localvimrc'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 call vundle#end()
