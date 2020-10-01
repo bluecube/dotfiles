@@ -61,7 +61,7 @@ let g:CommandTMaxFiles=1000000
 let g:CommandTFileScanner="git"
 
 " Configuration for localvimrc
-g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
+let g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
 
 " Language server config
 let g:lsc_server_commands = {'python': 'pyls', 'c': 'ccls', 'cpp': 'ccls'} " These must be installed externally!
