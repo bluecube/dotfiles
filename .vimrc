@@ -64,7 +64,7 @@ let g:CommandTFileScanner="git"
 let g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
 
 " Language server config
-let g:lsc_server_commands = {'python': 'pyls', 'c': 'ccls', 'cpp': 'ccls'} " These must be installed externally!
+let g:lsc_server_commands = {'python': 'pyls', 'c': 'clangd --log=error', 'cpp': 'clangd --log=error'} " These must be installed externally!
 let g:lsc_auto_map = v:true " use default key mappings
 
 " Vundle stuff
