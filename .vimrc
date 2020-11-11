@@ -16,6 +16,7 @@ set incsearch
 " Completion options
 set completeopt=menuone,preview,noinsert
 set complete-=i
+autocmd CompleteDone * silent! pclose " Close preview window when completion is done
 
 " Enter in complete menu
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
