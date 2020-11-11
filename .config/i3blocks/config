@@ -1,0 +1,8 @@
+[mediaplayer]
+command=mpc --format '[[[%artist% - ]%title%][ (%album%)]]|[%file%]' | awk 'BEGIN { icons["[playing]"] = "⏵"; icons["[paused]"] = "⏸" } NR==1 { title = $0 } NR==2 { print icons[$1], title}'
+interval=5
+signal=10
+
+[time]
+command=date '+%Y-%m-%d %H:%M'
+interval=5
