@@ -24,6 +24,7 @@ bindsym $mod+F11 exec amixer -- sset Master 5%-
 bindsym $mod+F12 exec amixer -- sset Master 5%+
 bindsym $mod+F5 exec mpc toggle
 bindsym $mod+Shift+F5 exec "mpc clear ; mpc ls | mpc add ; mpc shuffle | mpc play"
+bindsym $mod+F6 exec mpc stop
 bindsym $mod+F7 exec mpc prev
 bindsym $mod+Shift+F7 exec mpc seek -5
 bindsym $mod+F8 exec mpc next
