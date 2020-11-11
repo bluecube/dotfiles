@@ -6,7 +6,7 @@
 	merge = refs/heads/master
 [diff]
 	tool = gvimdiff
-	algorithm = patience
+	algorithm = histogram
 [push]
 	default = upstream
 [gui]
