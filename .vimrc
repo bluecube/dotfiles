@@ -57,16 +57,14 @@ let g:gitgutter_realtime = 0
 let g:gitgutter_map_keys = 0
 highlight clear SignColumn
 
-" Configuration for CommandT
-let g:CommandTMaxFiles=1000000
-let g:CommandTFileScanner="git"
-
 " Configuration for localvimrc
 let g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
 
 " Language server config
 let g:lsc_server_commands = {'python': 'pyls', 'c': 'clangd --log=error', 'cpp': 'clangd --log=error'} " These must be installed externally!
-let g:lsc_auto_map = v:true " use default key mappings
+let g:lsc_auto_map = {'defaults': v:true, 'PreviousReference': ''}
+    " use default key mappings but unmap previous reference, because it
+    " conflicts with ctrl-p
 
 " Vundle stuff
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -75,7 +73,7 @@ let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
 call vundle#begin()
 " vundle must be first here
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'wincent/Command-T'
+Plugin 'kien/ctrlp.vim'
 Plugin 'nacitar/a.vim'
 Plugin 'embear/vim-localvimrc'
 Plugin 'airblade/vim-gitgutter'
