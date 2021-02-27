@@ -12,4 +12,4 @@ xrdb -merge ~/.Xdefaults
 
 setxkbmap -layout us,cz -option grp:caps_switch
 #exec awesome
-exec i3
+exec dbus-launch --exit-with-session i3
