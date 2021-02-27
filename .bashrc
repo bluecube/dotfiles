@@ -74,5 +74,7 @@ PS1='\[\e]2;\u@\h \w$(__git_ps1)\a\]'$USER_COLOR'\u@'$HOST_STYLE'\h\[\e[00m'$MAI
 alias ls='ls --color=auto'
 
 function b {
+    status=$?
     echo -en '\a'
+    return $status
 }
