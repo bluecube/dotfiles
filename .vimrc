@@ -75,8 +75,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'nacitar/a.vim'
-Plugin 'embear/vim-localvimrc'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'natebosch/vim-lsc'
+Plugin 'editorconfig/editorconfig-vim'
 call vundle#end()
