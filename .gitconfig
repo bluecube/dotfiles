@@ -9,6 +9,7 @@
 	algorithm = histogram
 [push]
 	default = upstream
+	followTags = true
 [gui]
 	gcwarning = false
 	diffopts = --histogram
