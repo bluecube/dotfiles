@@ -78,3 +78,5 @@ function b {
     echo -en '\a'
     return $status
 }
+
+export BR2_DL_DIR="$HOME/mosaic/buildroot_dl"
