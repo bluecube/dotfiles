@@ -79,4 +79,8 @@ function b {
     return $status
 }
 
+function tmux_env {
+    eval "$(tmux show-env "$1")"
+}
+
 export BR2_DL_DIR="$HOME/mosaic/buildroot_dl"
