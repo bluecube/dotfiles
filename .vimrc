@@ -73,17 +73,11 @@ let g:lsc_auto_map = {'defaults': v:true, 'PreviousReference': ''}
     " use default key mappings but unmap previous reference, because it
     " conflicts with ctrl-p
 
-" Vundle stuff
-set rtp+=~/.vim/bundle/Vundle.vim
-let g:vundle_default_git_proto = 'git' " Use git protocol instead of https
-
-call vundle#begin()
-" vundle must be first here
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'kien/ctrlp.vim'
-Plugin 'nacitar/a.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'tpope/vim-fugitive'
-Plugin 'natebosch/vim-lsc'
-Plugin 'editorconfig/editorconfig-vim'
-call vundle#end()
+call plug#begin('~/.vim/plugged')
+Plug 'kien/ctrlp.vim'
+Plug 'nacitar/a.vim'
+Plug 'airblade/vim-gitgutter'
+Plug 'tpope/vim-fugitive'
+Plug 'natebosch/vim-lsc'
+Plug 'editorconfig/editorconfig-vim'
+call plug#end()
