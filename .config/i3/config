@@ -30,7 +30,7 @@ bindsym $mod+Shift+F7 exec mpc seek -5
 bindsym $mod+F8 exec mpc next
 bindsym $mod+Shift+F8 exec mpc seek +5
 # Power management
-bindsym $mod+F1 exec sudo pm-suspend
+bindsym $mod+F1 exec sudo loginctl suspend
 bindsym $mod+Shift+F1 exec urxvt -e sudo /usr/local/bin/backup_to_lizard.sh --sleep-after
 
 # Misc
