@@ -6,7 +6,14 @@ URxvt.secondaryScroll: false
 URxvt.saveLines: 20000
 URxvt.visualBell: true
 URxvt.urgentOnBell: true
-!Rxvt*termName: rxvt-unicode256
+URxvt.perl-ext-common: default,selection-to-clipboard,pasta,matcher,keyboard-select,font-size
+
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+URxvt.keysym.C-equal:  font-size:reset
+URxvt.keysym.C-slash:  font-size:show
 
 URxvt*background: #2B2B2B
 URxvt*foreground: #DEDEDE
