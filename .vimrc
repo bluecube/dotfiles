@@ -61,7 +61,14 @@ highlight clear SignColumn
 let g:localvimrc_persistent = 1 " Store and restore decisions only if the answer was given in upper case
 
 " Language server config
-let g:lsc_server_commands = {'python': 'pyls', 'c': 'clangd --log=error', 'cpp': 'clangd --log=error'} " These must be installed externally!
+let g:lsc_server_commands = {
+    \ 'python': 'pylsp',
+    \ 'c': 'clangd',
+    \ 'cpp': 'clangd',
+    \ 'rust': 'rls',
+    \}
+    " These must be installed externally!
+
 let g:lsc_auto_map = {'defaults': v:true, 'PreviousReference': ''}
     " use default key mappings but unmap previous reference, because it
     " conflicts with ctrl-p
