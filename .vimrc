@@ -80,4 +80,5 @@ Plug 'airblade/vim-gitgutter'
 Plug 'tpope/vim-fugitive'
 Plug 'natebosch/vim-lsc'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'sheerun/vim-polyglot'
 call plug#end()
