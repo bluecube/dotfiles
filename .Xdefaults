@@ -2,7 +2,7 @@
 URxvt*depth: 32
 URxvt.font: xft:DejaVu Sans Mono:size=9, xft:Noto Emoji
 URxvt.scrollBar: false
-URxvt.secondaryScroll:  true
+URxvt.secondaryScroll: false
 URxvt.saveLines: 20000
 URxvt.visualBell: true
 URxvt.urgentOnBell: true
