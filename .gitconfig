@@ -4,14 +4,19 @@
 [branch "master"]
 	remote = origin
 	merge = refs/heads/master
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
 [diff]
-	tool = gvimdiff
 	algorithm = histogram
 [push]
 	default = upstream
 	followTags = true
-[gui]
-	gcwarning = false
-	diffopts = --histogram
 [pull]
 	ff = only
+[rerere]
+	enabled = true
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
