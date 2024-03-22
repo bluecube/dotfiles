@@ -72,6 +72,7 @@ MAIN_COLOR='\e[01;34m\]'
 PS1='\[\e]2;\u@\h \w$(__git_ps1)\a\]'$USER_COLOR'\u@'$HOST_STYLE'\h\[\e[00m'$MAIN_COLOR' \w$(__git_ps1) \$ \[\e[00m\]'
 
 alias ls='ls --color=auto'
+eval "$(zoxide init bash)"
 
 function b {
     status=$?
