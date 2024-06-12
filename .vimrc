@@ -63,9 +63,7 @@ let g:localvimrc_persistent = 1 " Store and restore decisions only if the answer
 " Language server config
 let g:lsc_server_commands = {
     \ 'python': 'pylsp',
-    \ 'c': 'clangd',
-    \ 'cpp': 'clangd',
-    \ 'rust': 'rls',
+    \ 'rust': 'rust-analyzer',
     \}
     " These must be installed externally!
 
